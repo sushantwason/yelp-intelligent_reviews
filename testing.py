@@ -6,7 +6,7 @@ Created on Mar 2, 2013
 import unittest 
 import review
 
-'''To Yelp Employees:
+'''To the Reader:
         If you want to check any test case, please make sure to add \" and \', escape characters for any quotation symbols within the string '''
     
  
