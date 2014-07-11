@@ -177,7 +177,7 @@ def highlightDoc(doc,query):
 
 
 def main():
-    '''To Yelp Employees:
+    '''To the Reader:
         If you want to check any test case, please make sure to add \" and \', escape characters for any quotation symbols within the string '''
     
     doc="deep dish pizza is the deep of the deep dish in the pizza"
