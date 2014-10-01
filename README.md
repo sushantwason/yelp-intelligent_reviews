@@ -78,6 +78,7 @@ I tested the data by computing my own query search on yelp website
 Used PyUnit as the testing tool
 
 Cases include
+
 1) When query doesn’t match the document
 
 2) When query keywords are very few
