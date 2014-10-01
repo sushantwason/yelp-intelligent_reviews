@@ -70,7 +70,11 @@ Used PyUnit as the testing tool
 
 Cases include
 1) When query doesn’t match the document
+
 2) When query keywords are very few
+
 3) When query keywords are few and distant
+
 4) When query keywords are more
+
 5) When query keywords are jumbled, spelled wrong, case sensitive, slightly incomplete
