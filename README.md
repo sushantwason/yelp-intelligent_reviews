@@ -1,6 +1,8 @@
 Yelp Intelligent Reviews
-------------------------
+========================
+
 Problem
+-------
 
 Find and screen the most important section of the review based on a key word.
 e.g: Search query “deep dish pizza”
@@ -8,6 +10,8 @@ The output section of the review should be relevant to deep dish pizza.
 The size of output and content is based on the programmer.
 
 Algorithm
+---------
+
 1. Clean the Data using data cleaning strategies
 2. Pre-compute the indices of starting of each word and sentence
 3. Find where the query word(s) occur in the main document by storing the word starting indices with the priority( more consecutive the no. of query words are, higher the priority)
@@ -17,6 +21,8 @@ Algorithm
 7. Return the short review by highlighting the keywords.
 
 How I approached the problem
+----------------------------
+
 I put myself into the user’s shoe, and asked myself the following questions before I started implementing the algorithm
 Data Cleaning and PreProcessing
 • Remove multiple spaces with just one space
@@ -29,6 +35,8 @@ e.g: “bacon bacon bacon bacon bacon bacon” for “bacon sandwich” query st
 The algorithm should intelligently mine which is relevant for me.
 
 Algorithm
+---------
+
 • How to best identify which part of the document might be most relevant to the user
 • How long/short should the result be
 • Other features such as size of the data, format, and the data type, data structures that should be used to speed up the processing.
