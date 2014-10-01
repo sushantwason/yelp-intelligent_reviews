@@ -24,40 +24,49 @@ How I approached the problem
 ----------------------------
 
 I put myself into the user’s shoe, and asked myself the following questions before I started implementing the algorithm
+
 Data Cleaning and PreProcessing
-• Remove multiple spaces with just one space
+
+1. Remove multiple spaces with just one space
+
 User Friendly features
-• I would want the same results if I query “ pizza deep dish”, what I meant really was “ deep dish pizza” , “spicy indian chicken” or “ indian chicken spicy”
-• If I query ‘pizza’, I would still want to view results with the word ‘pizzas’, but I don’t want a result like ‘ I am deeply concerned…’ when I query ‘deep dish pizza’
-• I would be more interested in a line if it matches my query directly, e.g: ‘this place is famous for spicy indian chicken for “spicy indian chicken” query, as it is a direct match.
-• I would not be interested in spam, even though it occurs many times in one sentence.
+
+1. I would want the same results if I query “ pizza deep dish”, what I meant really was “ deep dish pizza” , “spicy indian chicken” or “ indian chicken spicy”
+
+2. If I query ‘pizza’, I would still want to view results with the word ‘pizzas’, but I don’t want a result like ‘ I am deeply concerned…’ when I query ‘deep dish pizza’
+
+3. I would be more interested in a line if it matches my query directly, e.g: ‘this place is famous for spicy indian chicken for “spicy indian chicken” query, as it is a direct match.
+
+4. I would not be interested in spam, even though it occurs many times in one sentence.
 e.g: “bacon bacon bacon bacon bacon bacon” for “bacon sandwich” query string.
-The algorithm should intelligently mine which is relevant for me.
 
-Algorithm
----------
+Things to consider
+------------------
 
-How to best identify which part of the document might be most relevant to the user
+1. How to best identify which part of the document might be most relevant to the user
 
-How long/short should the result be
+2. How long/short should the result be
 
-Other features such as size of the data, format, and the data type, data structures that should be used to speed up the processing.
+3. Other features such as size of the data, format, and the data type, data structures that should be used to speed up the processing.
 
 What my algorithm can do very well
+----------------------------------
 
-My algorithm can return a highly relevant shortened review, if there are a lot of query keywords in the document to be parsed.
+1. Can return a highly relevant shortened review, if there are a lot of query keywords in the document to be parsed.
 
-My algorithm is good for multinational people, whose English is not that great, so they mean something else and they type something else by jumbling up the keyword query.
+2. Is good for multinational people, whose English is not that great, so they mean something else and they type something else by jumbling up the keyword query.
 
-My Algorithm can also recognize certain words that means/represents the same as was queried by the user, but wasn’t exactly the same.(e.g: singular, plural)
+3. Can also recognize certain words that means/represents the same as was queried by the user, but wasn’t exactly the same.(e.g: singular, plural)
 
-My Algorithm can take care of spamming keywords, multiple keywords in 1 line.
+4. Can take care of spamming keywords, multiple keywords in 1 line.
 
-My Algorithm knows which set of keywords are important than others, and yields best result by prioritizing set of keywords.
+5. Knows which set of keywords are important than others, and yields best result by prioritizing set of keywords.
 
 What my algorithm cannot do very well
+-------------------------------------
 
-It would not yield best results, when they keywords are sparse and distant from each other.
+1. It would not yield best results, when they keywords are sparse and distant from each other.
+
 That is mainly, due lack of k- identifying strategies in using K-means.
 I wanted to implement my own K-Means function ( with hierarchical clustering) which would work best if the data is sparse and distant, but could not due to lack of time.
 
