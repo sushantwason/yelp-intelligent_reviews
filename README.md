@@ -37,23 +37,38 @@ The algorithm should intelligently mine which is relevant for me.
 Algorithm
 ---------
 
-• How to best identify which part of the document might be most relevant to the user
-• How long/short should the result be
-• Other features such as size of the data, format, and the data type, data structures that should be used to speed up the processing.
+How to best identify which part of the document might be most relevant to the user
+
+How long/short should the result be
+
+Other features such as size of the data, format, and the data type, data structures that should be used to speed up the processing.
+
 What my algorithm can do very well
-• My algorithm can return a highly relevant shortened review, if there are a lot of query keywords in the document to be parsed.
-• My algorithm is good for multinational people, whose English is not that great, so they mean something else and they type something else by jumbling up the keyword query.
-• My Algorithm can also recognize certain words that means/represents the same as was queried by the user, but wasn’t exactly the same.(e.g: singular, plural)
-• My Algorithm can take care of spamming keywords, multiple keywords in 1 line.
-• My Algorithm knows which set of keywords are important than others, and yields best result by prioritizing set of keywords.
+
+My algorithm can return a highly relevant shortened review, if there are a lot of query keywords in the document to be parsed.
+
+My algorithm is good for multinational people, whose English is not that great, so they mean something else and they type something else by jumbling up the keyword query.
+
+My Algorithm can also recognize certain words that means/represents the same as was queried by the user, but wasn’t exactly the same.(e.g: singular, plural)
+
+My Algorithm can take care of spamming keywords, multiple keywords in 1 line.
+
+My Algorithm knows which set of keywords are important than others, and yields best result by prioritizing set of keywords.
+
 What my algorithm cannot do very well
-• It would not yield best results, when they keywords are sparse and distant from each other.
+
+It would not yield best results, when they keywords are sparse and distant from each other.
 That is mainly, due lack of k- identifying strategies in using K-means.
 I wanted to implement my own K-Means function ( with hierarchical clustering) which would work best if the data is sparse and distant, but could not due to lack of time.
+
 Testing strategies
-• I tested the data by computing my own query search on yelp website
-• Used PyUnit as the testing tool
-• Cases include
+------------------
+
+I tested the data by computing my own query search on yelp website
+
+Used PyUnit as the testing tool
+
+Cases include
 1) When query doesn’t match the document
 2) When query keywords are very few
 3) When query keywords are few and distant
